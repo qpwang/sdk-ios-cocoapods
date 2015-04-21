@@ -6,7 +6,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "EMChatServiceDefs.h"
+
+#import "EMChatManagerDefs.h"
 
 @protocol IEMMessageBody;
 @class EMConversation;
@@ -205,12 +206,5 @@
  @return 是否更新成功
  */
 - (BOOL)updateMessageStatusFailedToDB;
-
-/*!
- @method
- @brief  更新当前 message到数据库
- @return 是否更新成功
- */
-- (BOOL)updateMessageToDB;
 
 @end
